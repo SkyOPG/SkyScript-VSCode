@@ -1,0 +1,25 @@
+{
+  "name": "skyscript",
+  "displayName": "skyscript",
+  "description": "SkyScript Language Support for VSCode",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.81.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "ss",
+      "aliases": ["SkyScript", "ss"],
+      "extensions": [".ss"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "ss",
+      "scopeName": "index.ss",
+      "path": "./syntaxes/ss.tmLanguage.json"
+    }]
+  }
+}
