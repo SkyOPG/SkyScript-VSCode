@@ -13,8 +13,20 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.ss",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
+				"match": "\\b(if|while|for|return|else)\\b"
+			},
+		{
+			"name": "keyword.operator.ss",
+			"match": "\\b(set|lock|fun)\\b" 
+		},
+	{
+		"name": "markup.quote.ss",
+		"match": "\\bnnei\\b"
+	},
+{
+	"name": "entity.other.inherited-class.ss",
+	"match": "\\bout\\b"
+}]
 		},
 		"strings": {
 			"name": "string.quoted.double.ss",
@@ -28,5 +40,5 @@
 			]
 		}
 	},
-	"scopeName": "index.ss"
+	"scopeName": "source.ss"
 }
