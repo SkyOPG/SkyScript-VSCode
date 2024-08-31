@@ -1,8 +1,9 @@
 {
-  "name": "skyscript",
-  "displayName": "skyscript",
-  "description": "SkyScript Language Support for VSCode",
-  "version": "0.0.1",
+  "name": "ecliptix",
+  "displayName": "Ecliptix",
+  "description": "Ecliptix Language Support for VSCode",
+  "publisher": "webwisetech",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.80.0"
   },
@@ -11,15 +12,19 @@
   ],
   "contributes": {
     "languages": [{
-      "id": "ss",
-      "aliases": ["SkyScript", "ss"],
-      "extensions": [".ss"],
+      "id": "ecx",
+      "aliases": ["Ecliptix", "ec", "ecx"],
+      "extensions": [".ec", ".ecx"],
+	  "icon": {
+		"light": "icons/ecx-light.png",
+		"dark": "icons/ecx-dark.png"
+	  },
       "configuration": "./language-configuration.json"
     }],
     "grammars": [{
-      "language": "ss",
-      "scopeName": "source.ss",
-      "path": "./syntaxes/ss.tmLanguage.json"
+      "language": "ecx",
+      "scopeName": "source.ecx",
+      "path": "./syntaxes/ecx.tmLanguage.json"
     }]
   }
 }
